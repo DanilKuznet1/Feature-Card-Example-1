@@ -4,37 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <title>Feature Card Example #1</title>
   </head>
   <body>
-    <img src="./house-1836070__480.jpg" alt="Image of card property" />
-    <p>DETACHED HOUSE</p>
-    <p>5Y OLD</p>
-    <span>$750,000</span>
-    <p>742 Evergreen Terrace</p>
+    <main class="card">
+      <img class="card-img" src="./house.png" alt="Image of card property" />
+      <section class="property-info-section">
+        <div class="property-spec-info">
+          <p class="property-text property-spec">DETACHED HOUSE</p>
+          <p class="property-text property-age">5Y OLD</p>
+        </div>
+        <span class="property-price">$750,000</span>
+        <p class="property-address">742 Evergreen Terrace</p>
+      </section>
 
-    <div>
-      <div>
-        <ion-icon name="bed-outline"></ion-icon>
-        <p><span>3</span> Bedrooms</p>
-      </div>
-      <div>
-        <ion-icon name="person-add-outline"></ion-icon>
-        <p><span>3</span> Bedrooms</p>
-      </div>
-    </div>
-    <div>
-      <p>REALTOR</p>
-      <div>
-        <img src="./customer-6.jpg" alt="Realtor's image">
-        <p>(555) 555-4321</p>
-      </div>
-    </div>
+      <section class="bedroom-section flex">
+        <div class="flex">
+          <ion-icon class="card-icon" name="bed-outline"></ion-icon>
+          <p>3 Bedrooms</p>
+        </div>
+        <div class="flex">
+          <ion-icon class="card-icon" name="person-add-outline"></ion-icon>
+          <p>3 Bedrooms</p>
+        </div>
+      </section>
+
+      <section class="realtor-section">
+        <p class="realtor-section-title">REALTOR</p>
+        <div class="realtor-info flex">
+          <img
+            class="realtor-img"
+            src="./customer-6.jpg"
+            alt="Realtor's image"
+          />
+          <div class="realtor-info">
+            <p class="realtor-name">Tiffany Heffner</p>
+            <p class="realtor-cell">(555) 555-4321</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script
       type="module"
