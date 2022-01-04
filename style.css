@@ -148,6 +148,27 @@ body {
   background-color: #fff;
 }
 
+.heart-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: lightgray;
+}
+
+button {
+  position: absolute;
+  top: 7.5%;
+  right: 7.5%;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover .heart-icon {
+  stroke: tomato;
+}
+
 /* ********************************* */
 /* CARD PROPERTY INFO SECTION */
 /* ********************************* */
